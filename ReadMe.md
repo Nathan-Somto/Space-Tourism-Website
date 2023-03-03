@@ -83,5 +83,5 @@ const proudOfThisFunc = () => {
 ## Author
 
 - Website - [Nathan Somto](https://www.your-site.com)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Twitter - [@Nathan_Somto](https://www.twitter.com/Nathan_Somto)
 
