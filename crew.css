@@ -7,7 +7,7 @@ h1,h2,h3,p,section,main{
 body{
     margin:0;
     padding:0;
-    background:url('/starter-code/assets/crew/background-crew-mobile.jpg');
+    background:url('./assets/crew/background-crew-mobile.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     font-size:16px;
@@ -19,12 +19,12 @@ body{
 }
 @media (min-width:500px){
     body{
-        background: url('/starter-code/assets/crew/background-crew-tablet.jpg');
+        background: url('./assets/crew/background-crew-tablet.jpg');
     }
 }
 @media( min-width:800px){
     body{
-        background: url('/starter-code/assets/crew/background-crew-desktop.jpg');
+        background: url('./assets/crew/background-crew-desktop.jpg');
     }
 }
 .infoh2{
