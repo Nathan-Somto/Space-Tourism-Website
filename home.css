@@ -1,0 +1,201 @@
+:root{
+    --dark-blue:linear-gradient(rgb(2, 1, 29),rgb(3, 1, 42),rgb(1, 2, 17));
+}
+
+.home{
+    background-image:url('./assets/home/background-home-mobile.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+body{
+   
+    color:#fff;
+    min-height:100vh;
+    height:auto;
+    overflow-x:hidden;
+    font-size:14px;
+    animation-name:appear;
+    animation-duration: 2s;
+   
+    transition: ease-in-out;
+}
+@keyframes appear {
+    0%{
+        opacity : 0;
+    }
+  
+    100%{
+        opacity: 1;
+    }
+}
+#darkBlue{
+    background:var(--dark-blue) !important;
+    animation-name:disappear;
+    animation-duration: 3s;
+    animation-delay:2s;
+    transition: ease-in ;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    height:100vh;
+}
+@keyframes disappear {
+    0%{
+        opacity:0.5;
+
+    }
+    100%{
+        opacity:0;
+    }
+    
+}
+.logo{
+    width:50%;
+}
+h3{
+   margin:0;
+    font-weight:200;
+    word-spacing:0.15rem;
+    font-size:1.65rem;
+}
+
+hr{
+    
+  position:relative;
+  bottom:65px;
+  right:200px;
+    backdrop-filter:blur(15px);
+    background-color:rgba(255,255,255,.10);
+    height:2px;
+    width:600px;
+    border:none;
+    
+}
+h1{
+    font-size:6rem;
+    margin:0;
+    padding-top:2.75rem;
+    padding-bottom:4.5rem;
+    font-weight:300;
+    letter-spacing:5px;
+    
+}
+
+.mainContent{
+    margin-top:0px;
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    text-align:center;
+    align-items: space-between;
+    justify-content: space-between;
+   line-height:1.8rem;
+   
+}
+.explore{
+    margin-top:100px;
+}
+.text p{
+    opacity:0.65;
+}
+.text p br{
+    display:none;
+}
+
+
+.none{
+    display:none;
+}
+.block{
+    display:block;
+}
+.center{
+    text-align: center;
+   
+    margin:0 auto;
+   
+}
+.center h3{
+    font-size:2rem;
+
+}
+.animateText{
+    animation-name: text;
+    animation-delay:1s;
+    animation-duration: 1.5s;
+    opacity: 0;
+    transition: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+   
+    
+}
+@keyframes text {
+    0%{
+        opacity:0;
+    }
+ 
+    100%{
+        opacity:1;
+    }
+    
+}
+.opacity{
+    opacity:1 !important;
+}
+.logo{
+    animation-name: size;
+
+    transition: ease-in;
+    animation-duration: 1.2s;
+}
+@keyframes size {
+    0%{
+        transform: scale(0.5,0.5);
+        opacity:0;
+    }
+
+    
+}
+
+
+
+@media (min-width: 500px) and (max-width:900px)
+{
+    .home{
+        background-image:url('./assets/home/background-home-tablet.jpg');
+        background-position: center center;
+    }
+    
+    .mainContent{
+        padding-top:1.2rem;
+    }
+}
+@media (min-width:901px){
+    .home{
+        background-image: url('./assets/home/background-home-desktop.jpg');
+        background-position: bottom center;
+        font-size: 16px;
+}
+}
+@media (min-width : 900px){
+    .mainContent{
+        align-items:center;
+        justify-content:space-evenly;
+        flex-direction:row;
+        text-align:left;
+        margin-top:5.8rem;
+    }    
+h1{
+    padding-top:4.5rem;
+    font-size: 8rem;
+    padding-bottom: 5rem;
+}
+.explore{
+    margin-top: 0;
+}}
+@media (min-width:400px)
+{
+    .text p br
+    {
+        display:block;
+    }
+}

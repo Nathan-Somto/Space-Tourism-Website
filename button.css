@@ -1,0 +1,30 @@
+.lg:hover{
+    transform:scale(0.5);
+}
+.btn{
+    background-color: #fff;
+   cursor: pointer;
+    border-radius:50%;
+    font-weight:200;
+    color:#000;
+    font-size:1.5rem;
+}
+.lg{
+    padding-top:80px;
+    padding-bottom:80px;
+    padding-left:60px;
+    padding-right:60px;
+
+}
+.sm{
+    padding-top:30px;
+    padding-bottom: 30px;
+    padding-left:40px;
+    padding-right:40px;
+
+}
+.outline{
+    background-color: transparent;
+    border:1px solid #fff;
+    color:#fff;
+}

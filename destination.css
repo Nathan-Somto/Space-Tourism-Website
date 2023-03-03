@@ -1,0 +1,172 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image:url('./assets/destination/background-destination-mobile.jpg');
+    background-size:100% 100%;
+    background-color: rgb(40, 45, 49);
+    background-repeat: repeat;
+    color:#fff;
+    min-height:100vh;
+    height:auto;
+    font-size:14px;
+    margin:0;
+    padding:0;
+}
+
+main{
+   margin: 0;
+   padding:0;
+    width:100%;
+}
+main > h1{
+    margin-left:5.5rem;
+    margin-bottom:0;
+   
+}
+.none{
+    display:none;
+}
+
+.text  h1{
+    font-size: 5rem;
+    padding:0;
+    margin-top:1.5rem;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-family:sans-serif;
+    font-weight:200;
+   
+   
+}
+.info{
+    display:grid;
+    margin-top:3.5rem;
+    grid-template-columns: 1fr;
+    width:100%;
+   
+  
+  
+}
+
+
+
+
+.text{
+
+   text-align: center;
+   
+}
+.text p{
+    width:80%;
+    margin-top:0;
+    margin:0 auto;
+    line-height: 1.8rem;
+    padding-bottom:1.2rem;
+}
+
+
+hr{
+   height:2px;
+   border:none;
+   background-color: rgba(255,255,255,0.2);
+    width:65%;
+    margin:0 auto;
+}
+
+.lower{
+margin: 0 auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:80%;
+}
+.lower div{
+    margin-right:1.9rem;
+}
+.lower h3{
+    font-size:1.05rem;
+}.img{
+    height:300px;
+}
+.img img{
+    width:50%;
+    max-width:100%;
+    display:block;
+    object-fit: contain;
+    height:100%;
+    margin:0 auto;
+}
+.innerLinks{
+    padding:0;
+   display:flex;
+   align-items: center;
+   justify-content: center;
+    list-style-type: none;
+
+  
+ 
+
+}
+.innerLinks li{
+    margin-right:1.85rem;
+}
+
+.planet{
+    cursor:pointer;
+    padding-bottom:0.15rem;
+    border-bottom:2px solid transparent;
+}
+.planet:hover{
+    border-color:#fff;
+}
+@media (min-width:800px){
+    body{
+        font-size:16px;
+    }
+    .info{
+        gap:3.5rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .text p{
+        width: 65% !important;
+        margin: 0;
+    }
+    .text{
+        text-align: left !important;
+       
+    }
+    .text h1, .text p{
+        margin-left:0.2rem !important;
+    }
+    .info h1{
+        text-align: left;
+    }
+    .img img{
+        display:block;
+        object-fit:contain;
+         margin:0 auto;
+         height: 400px !important;
+         width: 70% !important;;
+     }
+     .innerLinks,.lower{
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
+     }
+     .lower, hr{
+        margin:0 !important;
+     }
+}@media (min-width:500px) and (max-width:999px){
+    body{
+        background-image:url('./assets/destination/background-destination-tablet.jpg');
+        background-position: bottom center;
+    }
+    }
+    @media (min-width:1000px) {
+       body{
+        background-image:url('./assets/destination/background-destination-desktop.jpg');
+        background-position: center center;
+       } 
+    }

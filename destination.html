@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/NASA_logo.svg">
+  
+  <title>Space tourism website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./navbar.css">
+  <script src="./navbar.js" defer></script>
+  <link rel="stylesheet" href="./destination.css">
+  <script src="./planetSlider.js " defer></script>
+  <style>
+    body{
+      font-family: 'Space Mono', monospace;
+      font-size:14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav >
+      <img src = "./assets/shared/logo.svg"/>
+        <img  id ='toggle-btn' src="./assets/shared/icon-hamburger.svg" alt="">
+        
+     
+        <ul  class ="mainNav">
+        
+          <li class ="navitem">
+            <a href ="./index.html">
+             <span class ="number">00</span>
+              Home</a>
+             </li>
+           <li class ="navitem">
+             <a href ="#"> <span class ="number">01</span>
+                Destination</a></li>
+           <li class ="navitem"><a href ="./crew.html"><span class ="number">02</span> Crew<a></li>
+           <li class ="navitem" ><a href ="./technology.html"><span class ="number">03</span> Technology</a></li>
+           </ul>
+  
+           <ul  class ="sideNav">
+            <img  id ="toggle-close" src="./shared/icon-close.svg" alt="">
+            <li class ="navitem">
+              <a href ="./index.html">
+               <span class ="number">00</span>
+                Home</a>
+               </li>
+             <li class ="navitem">
+               <a href ="./destination.html">
+                 <span class ="number">01</span>
+                  Destination</a></li>
+             <li class ="navitem"><a href ="./crew.html"><span class ="number">02</span> Crew<a></li>
+             <li class ="navitem" ><a href ="./technology.html"><span class ="number">03</span> Technology</a></li>
+             </ul>
+    
+     
+    </nav>
+  </header>
+<main>
+  <h1><span>01</span> Pick your destination</h1>
+
+
+
+<section class="section info" >
+  
+    <div class ="img">
+      <img src ="./assets/destination/image-mars.png"/>
+    </div>
+
+    <div class ="text">
+  <ul class ="innerLinks">
+  <li class ='planet'>Moon</li>
+  <li class ='planet' >Mars</li>
+  <li class ='planet'>Europa</li>
+  <li class ='planet'>Titan</li>
+</ul>
+  <h1>Mars</h1>
+
+  <p>Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
+  the tallest planetary mountain in our solar system. It’s two and a half times 
+  the size of Everest!</p>
+<hr/> 
+<div class="lower">
+  <div>
+ <h3> Avg. distance</h3>
+  <h2>225 mil. km</h2>
+  </div>
+<div>
+  <h3>Est. travel time</h3>
+ <h2> 9 months</h2>
+  </div>
+  </div>
+  </div>
+</section>
+<section  class ='section none'>
+  
+    <div class="img">
+      <img src ="./assets/destination/image-moon.png"/>
+    </div>
+    
+    <div class="text">
+      <ul class ="innerLinks">
+        <li class ='planet'>Moon</li>
+        <li class ='planet' >Mars</li>
+        <li class ='planet'>Europa</li>
+        <li class ='planet'>Titan</li>
+      </ul>
+ <h1> Moon</h1>
+
+  <p>See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
+  regain perspective and come back refreshed. While you’re there, take in some history 
+  by visiting the Luna 2 and Apollo 11 landing sites.
+</p>
+<hr/>
+<div class ='lower'>
+  <div>
+  <h3>Avg. distance</h3>
+  <h2>384,400 km</h2>
+  </div>
+
+  <div>
+  <h3>Est. travel time</h3>
+  <h2>3 days</h2>
+  </div>
+  </div>
+  </div>
+</section>
+
+<section class ='section none'>
+
+    <div class = 'img'>
+      <img src ="./assets/destination/image-titan.png"/>
+    </div>
+    <div class = "text">
+      <ul class ="innerLinks">
+        <li class ='planet'>Moon</li>
+        <li class ='planet' >Mars</li>
+        <li class ='planet'>Europa</li>
+        <li class ='planet'>Titan</li>
+      </ul>
+  <h1>Titan</h1>
+
+
+ <p> The only moon known to have a dense atmosphere other than Earth, Titan 
+  is a home away from home (just a few hundred degrees colder!). As a 
+  bonus, you get striking views of the Rings of Saturn.
+ </p>
+ <hr/>
+ <div class ='lower'>
+  <div>
+  <h3>
+  Avg. distance
+  </h3>
+  <h2>1.6 bil. km</h2>
+</div>
+<div>
+  <h3>Est. travel time</h3>
+  <h2>7 years</h2>
+  </div>
+</div>
+  </div>
+</section>
+<section class ='section none'>
+
+    <div class ='img'>
+      <img src ="./assets/destination/image-europa.png"/>
+    </div>
+    
+    <div class ='text'>
+      <ul class ="innerLinks">
+        <li class ='planet'>Moon</li>
+        <li class ='planet' >Mars</li>
+        <li class ='planet'>Europa</li>
+        <li class ='planet'>Titan</li>
+      </ul>
+ <h1> Europa </h1>
+
+  <p>The smallest of the four Galilean moons orbiting Jupiter, Europa is a 
+  winter lover’s dream. With an icy surface, it’s perfect for a bit of 
+  ice skating, curling, hockey, or simple relaxation in your snug 
+  wintery cabin.
+  </p>
+<hr/>
+  <div class ='lower'>
+   <div>
+    <h3>
+  Avg. distance
+  </h3>
+  <h2>
+  628 mil. km
+</h2>
+</div>
+<div>
+  <h3>Est. travel time</h3>
+  <h2>3 years</h2>
+  </div>
+  </div>
+  </div>
+</section>
+</main>
+</body>
+</html>

@@ -1,0 +1,167 @@
+*{
+    box-sizing: border-box;
+}
+h1,h2,h3{
+    margin:0;
+}
+li{
+    list-style-type: none;
+}
+body{
+    background-image: url('/starter-code/assets/technology/background-technology-mobile.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    color:#fff;
+    min-height:100vh;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:14px;
+    margin:0;
+    padding:0;
+}
+.maincontent{
+    /*display:grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows: 500px;*/
+    display:flex;
+position: relative;
+    flex-direction:column-reverse;
+    padding:0;
+    max-width:100%;
+}
+main h1{
+    margin-bottom: 0.45rem;
+}
+.img{
+    width:80%;
+    margin:0 auto;
+    min-width:300px;
+    height: 300px;
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.infodata{
+    text-align:center;
+    padding:0;
+    width:80%;
+    margin:0 auto;
+}
+.infodata h2{
+    padding-top:5.5rem;
+    margin-bottom:0.75rem;
+}
+.none{
+    display:none;
+}
+
+.infodata h2{
+    font-size:1.05rem;
+    color:rgba(255,255,255,0.55);
+    font-weight:200;
+    text-transform: uppercase;
+   
+}
+.infodata h1{
+    font-size:2rem;
+    text-transform: uppercase;
+   
+}
+.infodata p{
+
+    line-height: 1.5rem;
+    font-weight:300;
+    font-size: 0.95rem;
+}
+.sm{
+    font-size:14px;
+}
+
+.numberLinks{
+ position: absolute;
+ top: 320px;
+ left: 40%;
+ bottom:0;
+ right: 60%;
+    display:flex;
+    justify-content: center;
+    flex-direction:row;
+}
+.numberLinks li{
+    margin-right: 0.95rem;
+}
+.img-bg-1{
+    background-image:url('./assets/technology/image-launch-vehicle-landscape.jpg');
+}
+.img-bg-2{
+    background-image: url('./assets/technology/image-space-capsule-landscape.jpg');
+}
+.img-bg-3{
+    background-image: url('./assets/technology/image-spaceport-landscape.jpg');
+}
+
+
+@media(min-width:900px){
+    .img-bg-1{
+        background-image:url('./assets/technology/image-launch-vehicle-portrait.jpg');
+    }
+    .img-bg-2{
+        background-image: url('./assets/technology/image-space-capsule-portrait.jpg');
+    }
+    .img-bg-3{
+        background-image: url('./assets/technology/image-spaceport-portrait.jpg');
+    }
+    .maincontent{
+        flex-direction: row;
+        padding-left:1.2rem;
+        text-align: left;
+        font-size: 14px;
+    }
+    .numberLinks li{
+        margin-bottom:1.85rem;
+        padding:1.5rem;
+    }
+    .sm{
+        font-size:16px;
+    }
+    .numberLinks {
+        position: relative;
+        top:0;
+        left:0;
+        right:0;
+        flex-direction: column;
+    }
+    .img{
+        height:450px;
+        width:100%;
+        margin:0;
+    }
+    body{
+        background-image: url('./assets/technology/background-technology-desktop.jpg');
+    }
+    .infodata p{
+        width:70%;
+    }
+    .infodata{
+        text-align: left;
+        margin:0;
+        width:100%;
+        padding-left: 2.5rem;
+    }
+}
+@media (min-width:1200px) {
+    .maincontent{
+        font-size:16px;
+    }
+    h1{
+        font-size:2.5rem;
+    }
+    h2{
+        font-size:2rem;
+    }
+}
+@media (min-width:500px){
+    body{
+        background-image: url('./assets/technology/background-technology-tablet.jpg');
+    }
+}

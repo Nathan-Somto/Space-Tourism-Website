@@ -1,0 +1,174 @@
+*{
+    box-sizing: border-box;
+}
+h1,h2,h3,p,section,main{
+    margin:0;
+}
+body{
+    margin:0;
+    padding:0;
+    background:url('/starter-code/assets/crew/background-crew-mobile.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size:16px;
+    color:#fff;
+    height:auto;
+    min-height:100vh;
+    /* font-family: "New Times Roman"; */
+  
+}
+@media (min-width:500px){
+    body{
+        background: url('/starter-code/assets/crew/background-crew-tablet.jpg');
+    }
+}
+@media( min-width:800px){
+    body{
+        background: url('/starter-code/assets/crew/background-crew-desktop.jpg');
+    }
+}
+.infoh2{
+    margin-bottom: 0;
+}
+.crewInfo{
+    display:flex;
+    flex-direction: column-reverse;
+    text-align: center;
+
+}
+.infodata{
+   padding:0;
+    /*padding-left:3.5rem;*/
+
+}
+.infodata h1{
+    font-size:2.5rem;
+    padding-bottom: 2rem;
+    letter-spacing: 2px;
+    
+}
+.infodata h3 {
+    color: rgba(255,255,255,0.3);
+    font-weight: 300;
+}
+.infodata p{
+    line-height: 1.5rem;
+    width:80%;
+    margin:0 auto 1.2rem auto;
+    font-weight:lighter;
+}
+.infoh2{
+    margin-left:2.75rem;
+}
+
+
+.infoimg img{
+    height:350px;
+    object-fit:contain;
+    display:block;
+    margin:0 auto 40px auto;
+   
+}
+h3{
+    font-size:2.05rem;
+}
+
+.infoh2{
+    font-weight:lighter;
+    font-family:Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+   font-size: 1.58rem;
+}
+ .number {
+    opacity:0.5;
+}
+.dot{
+    padding:1px 10px;
+    width:3px;
+    height:2px;
+    border-radius: 50%;
+    background-color:rgba(36, 34, 34, 0.9);
+    cursor:pointer;
+    margin:10px;
+   
+}
+
+.active{
+    background-color: #fff;
+    transition: all .3s ease-in-out;
+}
+.none{
+    display:none;
+}
+.dotcontainer{
+    position:absolute;
+    top:380px;
+    left:0;
+    right:0;
+}
+main{
+    position:relative;
+}
+@media(min-width:600px){
+.crewInfo{
+    flex-direction: column;
+}
+.dotcontainer{
+    position:relative;
+    top:0;
+    bottom:0;
+    left:0;
+    margin-bottom:1.5rem;
+}
+}
+@media(min-width:1000px){
+    .crewInfo{
+        font-size:14px;
+        margin-top:1.5rem;
+        padding: 0 4rem 0 4rem;
+        flex-direction:row;
+        text-align: left;
+    }
+    .infoimg img{
+        height:500px;
+        margin:0;
+    }
+    .infodata{
+        position:relative;
+        padding-top:5.5rem;
+        padding-left:2.75rem;
+    }
+    .infodata h1{
+        margin-left: 0.2rem;
+        font-size:2.5rem;
+    }
+    .infodata p{
+        width:80%;
+        margin:0;
+        word-spacing:2px;
+    }
+    .dotcontainer{
+        position:absolute;
+        top:450px;
+        left:2.75rem;
+    }
+    main{
+        position:relative;
+    }
+    .infoh2{
+        position:absolute;
+        top:1.5rem;
+        left:4.35rem;
+    }
+}
+@media(min-width:1200px){
+    .crewInfo{
+        font-size:16px;
+    }
+    .infodata h1{
+        font-size:3.5rem;
+    }
+    .infodata p{
+        width:60%;
+    }
+}

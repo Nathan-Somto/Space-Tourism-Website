@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+}
+header{
+    height:8rem;
+    width:100%;
+}
+body
+{
+    margin:0;
+    padding:0;
+}
+.mainNav{
+    position:relative;
+    height:100%;
+}
+.mainNav::before{
+    content: '';
+    position:absolute;
+    top:50%;
+    left:-50%;
+    height:2px;
+    background-color: rgba(238, 235, 235, 0.1);
+    backdrop-filter: blur(30px);
+    width:55%;
+    display:block;
+}
+.navitem{
+    list-style-type:none;
+    border-bottom: 3px solid  transparent;
+    margin-right:2rem;
+    padding-bottom:1.8rem;
+
+}
+.navitem .number{
+    font-weight:500;
+    opacity:1;
+}
+.navitem a{
+    font-weight:300;
+    opacity:0.75;
+}
+a{
+    text-decoration:none;
+    color:#fff;
+}
+nav{
+    padding-top:1.55rem;
+   display:flex;
+    flex-direction:row; 
+    justify-content: space-between; 
+    width:100%;
+    color:#fff;
+    
+}
+.mainNav
+{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    width:60%;
+    padding-top:1.85rem;
+    padding-left:3.5rem;
+    padding-right:1.85rem;
+   
+    
+}
+.sideNav, .mainNav{
+    background-color: rgba(255,255,255,.10);
+    backdrop-filter:blur(60px);
+}
+#toggle-btn
+{
+    display:none;
+}
+nav{
+    flex-direction:row ;
+}
+
+.sideNav{display:none;}
+.navitem:hover{
+    border-color: #fff;
+}
+nav >img{
+    align-self:center;
+    margin-left:1.8rem;
+}
+
+@media (min-width:769px) and (max-width:900px){
+    .number{
+        display:none;
+    }
+}
+#toggle-close {
+    display:block;
+    position:absolute;
+    top:1.5rem;
+    right:1.5rem;
+    margin-left:3rem;
+}
+@media (max-width:768px)
+{
+   .mainNav{
+    display: none;
+   }
+    .sideNav
+{
+position:fixed;
+top:0;
+right:0;
+display:none;
+flex-direction:column;
+   z-index:5;
+    align-items:flex-start;
+    justify-content: flex-start;
+    height:100vh;
+    width:30%;
+  
+    margin:0;
+    padding:0;
+}
+#toggle-btn{
+    display:block;
+    margin-right:1.2rem;
+}
+.sideNav .navitem{
+    margin-top:1.95rem;
+    padding:1.2rem;
+}
+
+}
+
